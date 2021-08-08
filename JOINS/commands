@@ -1,0 +1,23 @@
+#INNER JOIN
+SELECT *
+FROM Student
+INNER JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
+
+# RIGHT JOIN
+SELECT *
+FROM Student
+RIGHT JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
+
+#LEFT JOIN
+SELECT *
+FROM Student
+LEFT JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
+
+#FULL JOIN
+SELECT *
+FROM Student
+FULL JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
