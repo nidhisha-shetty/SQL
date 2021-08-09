@@ -1,4 +1,4 @@
-#INNER JOIN
+**INNER JOIN**
 Joins rows from both the tables on which the mentioned conditions are satisfied.
 
 SELECT *
