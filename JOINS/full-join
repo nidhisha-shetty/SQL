@@ -1,0 +1,8 @@
+#FULL JOIN
+FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. 
+The rows for which there is no matching, the result-set will contain NULL values.
+
+SELECT *
+FROM Student
+FULL JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
