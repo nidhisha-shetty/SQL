@@ -1,0 +1,10 @@
+#LEFT JOIN
+Returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. 
+For the rows of the left table which doesnot have matching records on the right table, the result-set will have values as null. 
+LEFT JOIN is also known as LEFT OUTER JOIN.
+
+SELECT *
+FROM Student
+LEFT JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
+
