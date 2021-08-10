@@ -1,0 +1,28 @@
+#RIGHT JOIN
+Returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join.
+The rows for which there is no matching row on left side, the result-set will contain values as null.
+RIGHT JOIN is also known as RIGHT OUTER JOIN.
+
+SELECT *
+FROM Student
+RIGHT JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
+
+#LEFT JOIN
+Returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. 
+For the rows of the left table which doesnot have matching records on the right table, the result-set will have values as null. 
+LEFT JOIN is also known as LEFT OUTER JOIN.
+
+SELECT *
+FROM Student
+LEFT JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
+
+#FULL JOIN
+FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. 
+The rows for which there is no matching, the result-set will contain NULL values.
+
+SELECT *
+FROM Student
+FULL JOIN StudentCourse 
+ON StudentCourse.ROLLNO = Student.ROLLNO;
