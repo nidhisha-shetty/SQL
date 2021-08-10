@@ -2,6 +2,35 @@
 FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. 
 The rows for which there is no matching, the result-set will contain NULL values.
 
+Consider the following tables to execute the full join query:
+1. student
++--------+----------+-----------+-----------+------+
+| rollno | name     | address   | phone     | age  |
++--------+----------+-----------+-----------+------+
+|      1 | Harsh    | Delhi     | 923456789 |   18 |
+|      2 | Pratik   | Bihar     | 933456789 |   19 |
+|      3 | Riyanka  | Siliguri  | 943456789 |   20 |
+|      4 | Deep     | Ramnagar  | 953456789 |   18 |
+|      5 | Saptarhi | Kolkata   | 963456789 |   19 |
+|      6 | Dhanraj  | Balurghat | 973456789 |   18 |
+|      7 | Rohit    | Barabajar | 983456789 |   18 |
+|      8 | Niraj    | Alipur    | 993456789 |   19 |
++--------+----------+-----------+-----------+------+
+2. studentcourse
++-----------+--------+
+| course_id | rollno |
++-----------+--------+
+|         1 | 1      |
+|         2 | 2      |
+|         2 | 3      |
+|         3 | 4      |
+|         1 | 5      |
+|         4 | 9      |
+|         5 | 10     |
+|         4 | 11     |
++-----------+--------+
+
+Query:
 SELECT *
 FROM Student
 FULL JOIN StudentCourse 
