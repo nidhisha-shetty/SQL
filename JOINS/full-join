@@ -31,7 +31,24 @@ Consider the following tables to execute the full join query:
 +-----------+--------+
 
 Query:
-SELECT *
+SELECT name, course_id
 FROM Student
 FULL JOIN StudentCourse 
 ON StudentCourse.ROLLNO = Student.ROLLNO;
+
+Output:
++----------+-----------+
+| name     | course_id |
++----------+-----------+
+| Harsh    |         1 | 
+| Pratik   |         2 | 
+| Riyanka  |         3 | 
+| Deep     |         3 | 
+| Saptarhi |         1 | 
+| Dhanraj  |      Null | 
+| Rohit    |      Null | 
+| Niraj    |      Null | 
+| Null     |         4 | 
+| Null     |         5 | 
+| Null     |         4 | 
++----------+-----------+
