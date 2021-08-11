@@ -31,24 +31,24 @@ Consider the following tables to execute the full join query:
 +-----------+--------+
 
 Query:
-SELECT name, course_id
+SELECT *
 FROM Student
 FULL JOIN StudentCourse 
 ON StudentCourse.ROLLNO = Student.ROLLNO;
 
 Output:
-+----------+-----------+
-| name     | course_id |
-+----------+-----------+
-| Harsh    |         1 | 
-| Pratik   |         2 | 
-| Riyanka  |         2 | 
-| Deep     |         3 | 
-| Saptarhi |         1 | 
-| Dhanraj  |      Null | 
-| Rohit    |      Null | 
-| Niraj    |      Null | 
-| Null     |         4 | 
-| Null     |         5 | 
-| Null     |         4 | 
-+----------+-----------+
++--------+----------+-----------+-----------+------+-----------+--------+
+| rollno | name     | address   | phone     | age  | course_id | rollno |
++--------+----------+-----------+-----------+------+-----------+--------+
+|      1 | Harsh    | Delhi     | 923456789 |   18 |         1 | 1      |
+|      2 | Pratik   | Bihar     | 933456789 |   19 |         2 | 2      |
+|      3 | Riyanka  | Siliguri  | 943456789 |   20 |         2 | 3      |
+|      4 | Deep     | Ramnagar  | 953456789 |   18 |         3 | 4      |
+|      5 | Saptarhi | Kolkata   | 963456789 |   19 |         1 | 5      |
+|      6 | Dhanraj  | Balurghat | 973456789 |   18 |      NULL | NULL   |
+|      7 | Rohit    | Barabajar | 983456789 |   18 |      NULL | NULL   |
+|      8 | Niraj    | Alipur    | 993456789 |   19 |      NULL | NULL   |
+|   NULL | NULL     | NULL      |      NULL | NULL |         4 | 9      |
+|   NULL | NULL     | NULL      |      NULL | NULL |         5 | 10     |
+|   NULL | NULL     | NULL      |      NULL | NULL |         4 | 11     |
++--------+----------+-----------+-----------+------+-----------+--------+
