@@ -35,7 +35,7 @@ Query:
 SELECT *
 FROM Student
 RIGHT JOIN StudentCourse 
-ON StudentCourse.ROLLNO = Student.ROLLNO;
+ON StudentCourse.rollno = Student.rollno;
 
 Output:
 +--------+----------+----------+-----------+------+-----------+--------+
